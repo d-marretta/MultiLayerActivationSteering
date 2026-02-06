@@ -1,0 +1,10 @@
+torch>=2.0.0
+diffusers>=0.20.0
+transformers
+accelerate
+scipy
+numpy
+pandas
+matplotlib
+huggingface_hub
+jupyter
