@@ -1,6 +1,4 @@
-torch>=2.0.0
-torchvision
-diffusers>=0.20.0
+diffusers
 transformers
 accelerate
 scipy
@@ -9,3 +7,6 @@ pandas
 matplotlib
 huggingface_hub
 jupyter
+--index-url https://download.pytorch.org/whl/cu126
+torch
+torchvision
