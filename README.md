@@ -12,7 +12,16 @@
 By identifying and shifting specific activation vectors within the U-Net, we can effectively "erase" concepts from the generation process while preserving the overall composition.
 
 
-*Figure 1: **Left:** Original generation. **Right:** Steered generation. Notice how the "Dog" is removed or replaced, "Van Gogh's style" is reverted to photorealism, and unsafe concepts are neutralized.*
+<div style="display: flex; justify-content: space-around;">
+  <figure style="text-align: center;">
+    <img src="assets/example_dog.png" alt="Original" style="width: 400px;">
+    <figcaption>Original</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="assets/example_dog_steered.png" alt="Steered" style="width: 400px;">
+    <figcaption>Steered</figcaption>
+  </figure>
+</div>
 
 ---
 
@@ -30,6 +39,17 @@ This project investigates **Activation Steering** for text-to-image models (spec
 
   * **Unsafe content** (e.g., Violence, Nudity )
 
+<div style="display: flex; justify-content: space-around;">
+  <figure style="text-align: center;">
+    <img src="assets/example_vangogh.png" alt="Original" style="width: 300px;">
+    <figcaption>Original</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="assets/example_vangogh_steered.png" alt="Steered" style="width: 300px;">
+    <figcaption>Steered</figcaption>
+  </figure>
+</div>
+
 ---
 
 ### 🧠 Methodology: adapting Layer Navigator
@@ -45,6 +65,17 @@ While Sun et al. designed these metrics for text, we transposed them to the visu
 
 2. **Consistency**: How stable the steering direction is across different prompts.
 
+<div style="display: flex; justify-content: space-around;">
+  <figure style="text-align: center;">
+    <img src="assets/example_violence.png" alt="Original" style="width: 300px;">
+    <figcaption>Original</figcaption>
+  </figure>
+  <figure style="text-align: center;">
+    <img src="assets/example_violence_steered.png" alt="Steered" style="width: 300px;">
+    <figcaption>Steered</figcaption>
+  </figure>
+</div>
+
 ---
 
 ### **💻 Quick Start**
@@ -54,7 +85,7 @@ While Sun et al. designed these metrics for text, we transposed them to the visu
 ```bash
 git clone https://github.com/d-marretta/MultiLayerActivationSteering.git
 cd MultiLayerActivationSteering
-pip install \-r requirements.txt
+pip install -r requirements.txt
 ```
 
 **2\. Demo**
