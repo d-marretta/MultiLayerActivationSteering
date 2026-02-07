@@ -89,7 +89,7 @@ While Sun et al. designed these metrics for text, we transposed them to the visu
 
 ```bash
 git clone https://github.com/d-marretta/MultiLayerActivationSteering.git
-cd MultiLayerActivationSteering
+cd MultiLayerActivationSteering/notebooks
 pip install -r requirements.txt
 ```
 
